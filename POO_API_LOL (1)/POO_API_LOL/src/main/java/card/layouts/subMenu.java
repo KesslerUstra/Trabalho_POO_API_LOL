@@ -34,10 +34,12 @@ public class subMenu extends JPanel{
 			//PainelEscolha menuPrincipal = new PainelEscolha(0,0,larguraTela,alturaTela,"#ECE9E9",this);
 		JPainelCardLayout jogo = new JPainelCardLayout(larguraTela,alturaTela,this);
 		subMenuPainel menu = new subMenuPainel(0,0,larguraTela,alturaTela,"#ECE9E9",this);
+		JPainelCardLayoutInvocador invocador = new JPainelCardLayoutInvocador(larguraTela,alturaTela,this);
 		
 		//Adicionamos nosso menu principal ao JPainel do cardLayout
 		this.add(jogo,"JOGO");
 		this.add(menu,"MENU");
+		this.add(invocador,"INVOCADOR");
 		//Definimos o tamanho do nosso JPainel do cardLayout
 		this.setBounds(0, 0, larguraTela, alturaTela);
 		

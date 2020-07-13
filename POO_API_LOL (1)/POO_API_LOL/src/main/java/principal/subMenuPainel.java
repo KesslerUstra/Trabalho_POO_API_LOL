@@ -32,10 +32,14 @@ public class subMenuPainel extends PainelBasicos{
 			//Criamos um JLabel com o conteudo de >>>>>>> JOGO <<<<<<<
 			JLabel escolha1 = criarLabels(165,180,400,30,20,">>>>>>> JOGO <<<<<<<");
 			this.add(escolha1);
+			JLabel escolha2 = criarLabels(142,250,400,30,20,">>>>>>> JOGADOR <<<<<<<");
+			this.add(escolha2);
 			JLabel escolha3 = criarLabels(169,320,400,30,20,">>>>>>> SAIR <<<<<<<");
 			this.add(escolha3);
 			//Adicionei um evento na label escolha1 para ir para outro card do nosso CardLyout
 			escolha1.addMouseListener(new EventoClick(cards,"JOGO"));
+			//Adicionei um evento na label escolha2 para ir para outro card do nosso CardLyout
+			escolha2.addMouseListener(new EventoClick(cards, "INVOCADOR"));
 			//Versao do codigo
 			escolha3.addMouseListener(new EventoClickSair());
 			JLabel versao = criarLabels(0,540,80,20,10,"1.0.0");
